@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\Tim\.nuget\packages\nlog.config\4.7.2\contentFiles\any\any\NLog.config" />
+    <None Remove="C:\Users\Tim\.nuget\packages\nlog.schema\4.7.2\contentFiles\any\any\NLog.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="NLog.Schema" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ascom.Utilities.Logging\Ascom.Utilities.Logging.csproj" />
+    <ProjectReference Include="..\TA.LoggingService.NLog\TA.LoggingService.NLog.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
