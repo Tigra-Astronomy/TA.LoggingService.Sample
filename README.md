@@ -20,3 +20,5 @@ The `TA.ApplicationExample.Console` project shows how the end user would actuall
 and uses dependency injection with _Ninject_.
 
 Please see the `ReadMe.md` file within each project for more information.
+
+![Dependencies Chart](assets\DependenciesGraph.png)
